@@ -1,92 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fran's Flowers | Boutique Flower Shop in San Francisco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header>
-      <div class="header-content">
-        <h1><span class="accent">Fran's</span> Flowers</h1>
-        <p class="tagline">Brightening San Francisco since 1995</p>
-      </div>
+      <h1><span class="accent">Fran's</span> Flowers</h1>
+      <p class="tagline">Brightening San Francisco since 1995</p>
     </header>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#visit">Visit Us</a></li>
+      </ul>
+    </nav>
 
     <div id="hero-container">
       <img
         src="img/fran.png"
-        alt="Francine Miller, owner of Fran's Flowers"
+        alt="Francine Miller, owner of Fran's Flowers, smiling in the shop"
         class="hero-img"
       />
     </div>
 
-    <main>
-      <section class="about-us">
-        <h2><span class="accent">About</span> Us</h2>
+    <main id="main-content">
+      <section class="about-us" id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading"><span class="accent">About</span> Us</h2>
         <p>
           Fran's Flowers was founded in 1995 by Francine Miller to share joy,
           beauty, and connection with the Mission District of San Francisco.
           Thirty years later we remain rooted in that vision, brightening lives
-          with every bouquet while supporting our community. Ten percent of each
-          sale continues to fund efforts to fight homelessness across the Bay
-          Area.
+          with every bouquet while supporting our community.
         </p>
-        <p>Thank you for helping us grow kindness one flower at a time.</p>
+        <p>
+          Ten percent of each sale continues to fund efforts to fight
+          homelessness across the Bay Area. Thank you for helping us grow
+          kindness one flower at a time.
+        </p>
+        <a href="about.html" class="btn">Read Our Full Story &rarr;</a>
       </section>
 
-      <section class="specials">
-        <h2><span class="accent">Weekly</span> Specials</h2>
+      <section
+        class="specials"
+        id="specials"
+        aria-labelledby="specials-heading"
+      >
+        <h2 id="specials-heading">
+          <span class="accent">Weekly</span> Specials
+        </h2>
         <div class="specials-list">
           <article class="special-offer">
-            <img src="img/potted_plant.png" alt="Ceramic Potted Herbs" />
+            <img
+              src="img/potted_plant.png"
+              alt="Ceramic potted herb arrangement"
+            />
             <h3>Ceramic Potted Herbs</h3>
             <p class="price-now">$7.99</p>
-            <p class="price-was">Was $17.99</p>
+            <p class="price-was">
+              <span class="sr-only">Regular price: </span>Was $17.99
+            </p>
           </article>
 
           <article class="special-offer">
-            <img src="img/wild_flowers.png" alt="Wildflower Explosion" />
+            <img src="img/wild_flowers.png" alt="Vibrant wildflower bouquet" />
             <h3>Wildflower Explosion</h3>
             <p class="price-now">$19.99</p>
-            <p class="price-was">Was $29.99</p>
+            <p class="price-was">
+              <span class="sr-only">Regular price: </span>Was $29.99
+            </p>
           </article>
 
           <article class="special-offer">
-            <img src="img/sunflowers.png" alt="Sunflower Delight" />
+            <img src="img/sunflowers.png" alt="Bright sunflower arrangement" />
             <h3>Sunflower Delight</h3>
             <p class="price-now">$12.99</p>
-            <p class="price-was">Was $19.99</p>
+            <p class="price-was">
+              <span class="sr-only">Regular price: </span>Was $19.99
+            </p>
           </article>
         </div>
       </section>
 
-      <section class="visit-us">
-        <h2><span class="accent">Visit</span> Us</h2>
+      <section
+        class="testimonials"
+        id="testimonials"
+        aria-labelledby="testimonials-heading"
+      >
+        <h2 id="testimonials-heading">
+          <span class="accent">What Our</span> Customers Say
+        </h2>
+        <div class="testimonials-list">
+          <article class="testimonial-card">
+            <blockquote>
+              "I've been coming to Fran's for over 15 years. Every bouquet is
+              made with such love and care. There's no place like it in the
+              whole city!"
+            </blockquote>
+            <p class="testimonial-author">— Margaret T., Mission District</p>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote>
+              "Fran arranged the flowers for my daughter's wedding and they were
+              absolutely breathtaking. She listened to every little detail and
+              got it perfect."
+            </blockquote>
+            <p class="testimonial-author">
+              — Robert &amp; Linda K., San Francisco
+            </p>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote>
+              "I love that they give back to the community. Every time I buy
+              flowers here I feel good knowing it helps our neighbors too. A
+              truly special shop."
+            </blockquote>
+            <p class="testimonial-author">— Dorothy M., Noe Valley</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="visit-us" id="visit" aria-labelledby="visit-heading">
+        <h2 id="visit-heading"><span class="accent">Visit</span> Us</h2>
         <div class="contact-info">
           <p>Come in and say hi!</p>
-          <div class="address-block">
-            <address>123 Valencia Street, San Francisco, CA 94103</address>
-          </div>
-          <div class="phone-block">
-            <p>Call us at <a href="tel:+1234567890">123-456-7890</a></p>
-          </div>
+          <address>123 Valencia Street, San Francisco, CA 94103</address>
+          <p>
+            Call us at
+            <a href="tel:+1234567890" class="phone-link">123-456-7890</a>
+          </p>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.144965296929!2d-122.4230293!3d37.7689366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e3a37128e21%3A0xf85bfc7fef295b98!2s123%20Valencia%20St%2C%20San%20Francisco%2C%20CA%2094103!5e0!3m2!1sen!2sus!4v1722345678901!5m2!1sen!2sus"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div class="map-wrap">
+          <iframe
+            title="Map showing Fran's Flowers at 123 Valencia Street, San Francisco"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.144965296929!2d-122.4230293!3d37.7689366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e3a37128e21%3A0xf85bfc7fef295b98!2s123%20Valencia%20St%2C%20San%20Francisco%2C%20CA%2094103!5e0!3m2!1sen!2sus!4v1722345678901!5m2!1sen!2sus"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
 
     <footer>
-      <div class="footer-content">
-        <p>&copy; 2025 Fran's Flowers LLC.</p>
-        <p>Brightening lives one flower at a time</p>
-      </div>
+      <p><strong>Fran's Flowers LLC</strong> &copy; 2025</p>
+      <p>Brightening lives one flower at a time</p>
+      <p class="social-links">
+        <a href="https://youtube.com/@fransflowers">&#9654; YouTube</a>
+        <a href="https://twitter.com/fransflowerssf">&#120143; Twitter</a>
+        <a href="https://instagram.com/fransflowerssf">&#9764; Instagram</a>
+      </p>
     </footer>
   </body>
 </html>
